@@ -22,7 +22,10 @@ for (let product of products) {
     totalNumberOfProducts += product.quantity;
 }
 
-// 4. adding the product information
+/* 4. for adding the product information 
+      this section of the code updates the qunatity of laptop 
+      so that it adds 10 new units to its existing stock*/
+
 for (let product of products) {
     if (product.name === "Laptop") {
         product.quantity += 10;
@@ -39,9 +42,11 @@ for (let product of products) {
     }
 }
 
-// 6. adding a new product with its price and quantity to the inventory
+/* 6. adding a new product with its price and quantity to the inventory
+      in this section of the code i have added a new product called smartwatch
+      with its price and quantity*/
 let newProduct = { name: "Smartwatch", price: 6969, quantity: 69 };
-products.push(newProduct);
+products.push(newProduct); // add the new product to the array
 
 
 // 7. recalculating the total inventory value with a new product
